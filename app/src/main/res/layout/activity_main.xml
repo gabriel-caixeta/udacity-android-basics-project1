@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_business_foreground"
+            android:layout_marginBottom="8dp"
+            android:background="@color/gray"
+            />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/header"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:src="@mipmap/ic_barbershop_foreground"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+
+            android:text="BarberShop Takeda"
+            />
+
+        <ImageView
+            android:id="@+id/business_hours_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_hours_foreground"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/business_hours_icon"
+            android:layout_toEndOf="@id/business_hours_icon"
+            android:layout_toRightOf="@id/business_hours_icon"
+            android:text="9:00 - 18:00"
+            android:layout_marginBottom="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/phone_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/business_hours_icon"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_phone_foreground"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/phone_icon"
+            android:layout_toRightOf="@id/phone_icon"
+            android:layout_toEndOf="@id/phone_icon"
+            android:layout_marginBottom="16dp"
+            android:text="+81 (080) 4925-2358"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/location_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/phone_icon"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_location_foreground"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/location_icon"
+            android:layout_toEndOf="@id/location_icon"
+            android:layout_toRightOf="@id/location_icon"
+            android:layout_marginBottom="16dp"
+            android:text="2-31-16 Kikunodai Chofushi, Tokyo"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/website_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/location_icon"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_website_foreground"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/website_icon"
+            android:layout_toEndOf="@id/website_icon"
+            android:layout_toRightOf="@id/website_icon"
+            android:layout_marginBottom="16dp"
+            android:text="http://barber1969.com/"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+    </RelativeLayout>
+</ScrollView>

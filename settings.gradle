@@ -1,0 +1,2 @@
+rootProject.name = "UdacityAndroidBasicsProject1"
+include ':app'
